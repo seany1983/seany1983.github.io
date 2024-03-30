@@ -1,138 +1,66 @@
-#particles-js {
-  position: absolute;
+/* Global Styles */
+html,
+body {
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: black;
+}
+
+/* Specific element styling */
+#particles-js {
+  height: 100vh;
+  position: absolute;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-} 
+  background-color: #000;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
 .main-content {
   padding: 10% 5%;
+  width: 100%;
+  text-align: center;
 }
 
-.header {
-  display: flex;
-}
-
-.work-header {
-  display: flex;
-}
-
-h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 3.0rem;
-  font-weight: 700;
-  color: black;
-}
-
-h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 500;
-  color: black;
-}
-
-h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: black;
-  padding-bottom: 10px;
-}
-
+h1,
+h2,
+h3,
 p {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.2rem;
   font-weight: 400;
   color: black;
 }
 
-.time-text {
-  font-family: 'Rubik', sans-serif;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+p {
   font-size: 1.2rem;
-  font-weight: 200;
-  color: black;
 }
 
-.header-text {
-  width: 80%
-}
-
-.header-image {
-  width: 65%;
-  height: 65%;
-}
-
-.col {
-  padding-bottom: 30px;
-}
-
-.rounded-corners {
-  border-radius: 20px;
-  height: 300px;
-}
-
-.title-image {
-  border-radius: 20px;
-  width: 80%;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 0% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  border-radius: 3%;
-}
-
-.closeModal1 {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.closeModal1:hover,
-.clocloseModal1se:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-ul {
-  list-style-position: inside;
-  list-style-type: square;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: center;
-}
-
+/* Flex containers */
+.flex-container,
 .flex-container-reverse {
   display: flex;
   flex-wrap: wrap;
@@ -140,129 +68,82 @@ ul {
   text-align: center;
 }
 
-.big-container-left {
-  flex: 70%;
+.big-container-left,
+.big-container-right,
+.small-container-right,
+.small-container-left {
   padding: 10px;
+}
+
+.big-container-left,
+.big-container-right {
+  flex: 70%;
   text-align: left;
+}
+
+.small-container-right,
+.small-container-left {
+  flex: 30%;
 }
 
 .small-container-right {
-  flex: 30%;
-  padding: 10px;
   text-align: right;
 }
 
-.big-container-right {
-  flex: 70%;
-  padding: 10px;
-  text-align: left;
+/* Images */
+.title-image {
+  border-radius: 20px;
+  width: 80%;
 }
 
-.small-container-left {
-  flex: 30%;
-  padding: 10px;
-  text-align: left;
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Contact me section */
-
-.fa {
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto;
   padding: 20px;
-  font-size: 20px;
-  width: 60px;
-  text-align: center;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 3%;
+}
+
+.closeModal1,
+.closeModal2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeModal1:hover,
+.closeModal1:focus,
+.closeModal2:hover,
+.closeModal2:focus {
+  color: black;
   text-decoration: none;
-  border-radius: 50%;
+  cursor: pointer;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-paper-plane {
-  background: #3D348B;
-  color: white;
-}
-
-.fa-instagram {
-  background: #7678ED;
-  color: white;
-}
-
-.fa-github {
-  background: #0973fd;
-  color: white;
-}
-
-/* Styling for the progress bars */
-
-.progressbar {
-  height: 30px;
-  width: 20%;
-  background-color: #3D348B;
-  display: flex;
-  align-items: center;
-  margin: 20px;
-}
-
-.inner-progressbar {
-  background-color: #7678ED;
-  height: 22px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-right: 4px;
-  color: white;
-  text-align: right;
-  font-size: 15px;
-}
-
-.italian {
-  width: 100%;
-}
-
-.english {
-  width: 100%;
-}
-
-.german {
-  width: 85%;
-}
-
-.mandarin {
-  width: 20%
-}
-
-@media only screen and (max-width: 550px) and (min-width: 200px){
-  .container-fluid {
-    align-content: center;
-  }
-
-  .header {
-    display: inline;
-    align-items: center;
-  }
-
-  .progressbar {
-    width: 60%;
-  }
-
-  .flex-container-reverse {
-    flex-direction: column-reverse;
-  }
-  
-  .big-container-left, .small-container-right {
-    flex: 100%;
-  }
-
-  .small-container-right {
-    text-align: center;
-  }
-
-  .big-container-right, .small-container-left {
-    flex: 100%;
-  }
-
+/* Responsive Design Adjustments */
+@media only screen and (max-width: 550px) {
+  .flex-container-reverse,
+  .big-container-left,
+  .small-container-right,
+  .big-container-right,
   .small-container-left {
+    flex-direction: column;
     text-align: center;
+    flex: 100%;
   }
 }

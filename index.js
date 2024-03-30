@@ -57,7 +57,6 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
-
 //BUTTON 1
 var modal1 = document.getElementById("modal1");
 
@@ -70,14 +69,14 @@ var spanModal1 = document.getElementsByClassName("closeModal1")[0];
 // When the user clicks on the button, open the modal
 btnModal1.onclick = function () {
   modal1.style.display = "block";
-  var video = document.getElementById('video1');
+  var video = document.getElementById("video1");
   video.play();
 };
 
 // When the user clicks on <span> (x), close the modal
 spanModal1.onclick = function () {
   modal1.style.display = "none";
-  var video = document.getElementById('video1');
+  var video = document.getElementById("video1");
   video.pause();
 };
 
@@ -113,4 +112,3 @@ window.onclick = function (event) {
     modal2.style.display = "none";
   }
 };
-
