@@ -29,26 +29,17 @@
   <body>
     <div id="particles-js"></div>
 
-    <div
-      class="main-content"
-      style="text-align: center; width: 100%; position: absolute"
-    >
-      <div class="" style="height: 750px">
-        <h1 style="padding-top: 230px; color: white">
-          Hi, my name is Sean O'Flynn
-        </h1>
-        <p style="padding-top: 25px; color: white" id="app"></p>
+    <div class="main-content">
+      <div class="hero-section">
+        <h1>Hi, my name is Sean O'Flynn</h1>
+        <p id="app"></p>
       </div>
 
-      <h2 style="padding-bottom: 10px; padding-top: 10px">Introduction</h2>
+      <h2>Introduction</h2>
 
-      <!-- Introduction -->
-      <div
-        class="flex-container-reverse"
-        style="padding-bottom: 50px; padding-top: 20px"
-      >
-        <div class="big-container-left" style="">
-          <p style="padding-bottom: 5px">
+      <div class="flex-container-reverse intro-section">
+        <div class="big-container-left">
+          <p>
             Freshly graduated with a degree in Actuarial and Financial Studies
             from University College Dublin, I am embarking on an exciting
             journey as an Actuarial Consultant with Reitigh Software starting
@@ -57,7 +48,7 @@
             passing the CP1 and CP3 exams in April 2024. Alongside this, I am
             committed to improving my computer science skills.
           </p>
-          <p style="padding-bottom: 5px">
+          <p>
             During my time at university, I developed a robust foundation in
             Actuarial Science, Economics, and Computer Science. Additionally, I
             honed my teamwork and communication skills as the Treasurer of the
@@ -67,50 +58,43 @@
           </p>
         </div>
         <div class="small-container-right">
-          <img src="assets/ProfilePic.jpg" class="title-image" />
+          <img
+            src="assets/ProfilePic.jpg"
+            class="title-image"
+            alt="Profile Picture of Sean O'Flynn"
+          />
         </div>
       </div>
 
-      <h2 style="padding-bottom: 20px">My Projects</h2>
+      <h2>My Projects</h2>
 
-      <!-- Current Project #1 -->
-      <div
-        class="flex-container-reverse"
-        style="padding-bottom: 50px; padding-top: 40px"
-      >
+      <div class="flex-container-reverse project-section">
         <div class="big-container-left">
           <h3>Semantic Search Tool To Aid with Study for IFOA Exams</h3>
           <p class="time-text">2024</p>
-          <!--Add your own dates-->
           <p>
             The project aimed to leverage Large Language Models (LLMs) and
             Machine Learning (ML) techniques to develop a semantic search tool
             to aid exam preparation, specifically targeting the Institute and
             Faculty of Actuaries (IFOA) CP1 exam.
           </p>
-          <button
-            style="padding-bottom: 5px"
-            type="button"
-            class="btn btn-outline-success"
-            id="btn1"
-          >
+          <button type="button" class="btn btn-outline-success" id="btn1">
             See more
           </button>
         </div>
         <div class="small-container-right">
-          <img src="assets/SemanticSearchImage.webp" class="title-image" />
+          <img
+            src="assets/SemanticSearchImage.webp"
+            class="title-image"
+            alt="Semantic Search Tool Project Image"
+          />
         </div>
       </div>
 
-      <!-- Current Project #2 -->
-      <div
-        class="flex-container-reverse"
-        style="padding-bottom: 50px; padding-top: 40px"
-      >
+      <div class="flex-container-reverse project-section">
         <div class="big-container-left">
           <h3>Personal Website</h3>
           <p class="time-text">2024</p>
-          <!--Add your own dates-->
           <p>
             This personal website was created utilizing an open-source template
             and customized with unique design elements. The design incorporates
@@ -118,17 +102,16 @@
             certificate from freeCodeCamp, involving approximately 300 hours of
             dedicated effort.
           </p>
-          <button
-            style="padding-bottom: 5px"
-            type="button"
-            class="btn btn-outline-success"
-            id="btn2"
-          >
+          <button type="button" class="btn btn-outline-success" id="btn2">
             See more
           </button>
         </div>
         <div class="small-container-right">
-          <img src="assets/WebsiteImage.webp" class="title-image" />
+          <img
+            src="assets/WebsiteImage.webp"
+            class="title-image"
+            alt="Personal Website Project Image"
+          />
         </div>
       </div>
 
@@ -141,18 +124,12 @@
 
       <!--MODALS-->
 
-      <!-- Modal for Button #1 - change inside information such as images and text to make it your own-->
-      <div id="modal1" class="modal">
+      <div id="modal1" class="modal" aria-hidden="true">
         <div class="modal-content">
           <span class="closeModal1">&times;</span>
           <h2>Semantic Search Tool To Aid with Study for IFOA Exams</h2>
           <br />
-          <video
-            id="video1"
-            loop
-            controls
-            style="height: 400px; width: 100%; object-fit: contain"
-          >
+          <video id="video1" loop controls>
             <source
               src="assets/ExampleofSemanticSearchTool.mp4"
               type="video/mp4"
@@ -173,14 +150,10 @@
             proved invaluable in compiling study notes for the CP1 exam,
             showcasing the potential of AI-driven tools in educational contexts.
           </p>
-          <p>
-            Please reach out if you would like more information on this project!
-          </p>
         </div>
       </div>
 
-      <!-- Modal for Button #2 - change inside information such as images and text to make it your own-->
-      <div id="modal2" class="modal">
+      <div id="modal2" class="modal" aria-hidden="true">
         <div class="modal-content">
           <span class="closeModal2">&times;</span>
           <h2>Personal Website</h2>
@@ -216,29 +189,28 @@
               <div class="carousel-item active">
                 <img
                   src="assets/HTML5Logo.png"
-                  style="height: 400px; object-fit: contain; width: 100%"
                   class="d-block w-100"
-                  alt="..."
+                  style="height: 400px; object-fit: contain"
+                  alt="HTML5 Logo"
                 />
               </div>
               <div class="carousel-item">
                 <img
                   src="assets/CSS3Logo.png"
-                  style="height: 400px; object-fit: contain; width: 100%"
                   class="d-block w-100"
-                  alt="..."
+                  style="height: 400px; object-fit: contain"
+                  alt="CSS3 Logo"
                 />
               </div>
               <div class="carousel-item">
                 <img
                   src="assets/JSLogo.webp"
-                  style="height: 400px; object-fit: contain; width: 100%"
                   class="d-block w-100"
-                  alt="..."
+                  style="height: 400px; object-fit: contain"
+                  alt="JavaScript Logo"
                 />
               </div>
             </div>
-            <br />
             <button
               class="carousel-control-prev"
               type="button"
@@ -274,14 +246,12 @@
             Leveraging GitHub Pages for free hosting, I deployed the site and
             seamlessly redirected my domain to it. I also made use of ChatGPT to
             aid me in design and debugging. I also made use of my Responsive Web
-            Design Certificatation from freeCodeCamp.
-          </p>
-          <p>
-            Please reach out if you would like more information on this project!
+            Design Certification from freeCodeCamp.
           </p>
         </div>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
